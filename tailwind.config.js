@@ -16,6 +16,7 @@ export default {
       /* bg colors */
       bg_DCD: "var(--bg_DCD)",
       bg_F2E: "var(--bg_F2E)",
+      bg_F20: "var(--bg_F20)",
       bg_FF6: "var(--bg_FF6)",
       bg_677: "var(--bg_677)",
       bg_FFE: "var(--bg_FFE)",
