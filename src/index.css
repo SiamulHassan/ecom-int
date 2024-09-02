@@ -32,6 +32,10 @@
   --primary_font: "EB Garamond", serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   overflow-x: hidden;
   line-height: 1.7;
