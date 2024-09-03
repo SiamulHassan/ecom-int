@@ -6,12 +6,14 @@ import NavBar from "../ui/NavBar";
 
 const RootLayout = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
       <NavBar />
-      <Outlet />
+      <div className="grow bg-bg_FF6">
+        <Outlet />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

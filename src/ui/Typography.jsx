@@ -12,7 +12,8 @@ const variantsMapping = {
 
   span_normal_12: "font-primary_font font-normal text-[1.2rem]",
   span_normal_14: "font-primary_font font-normal text-[1.4rem]",
-  span_normal_16: "font-primary_font font-normal text-[1.6rem]",
+  span_normal_16:
+    "font-primary_font font-normal text-[1.2rem] sm:text-[1.6rem]",
   span_normal_24: "font-primary_font font-normal text-[2.4rem]",
   span_bold_16: "font-primary_font font-bold text-[1.6rem]",
   span_semibold_20: "font-primary_font font-semibold text-[2rem]",

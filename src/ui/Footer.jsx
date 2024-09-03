@@ -45,16 +45,21 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="contact justify-self-center md:justify-self-end flex items-center gap-3">
-          {socialIcons.map((icons, i) => (
-            <Link
-              className="w-[3.6rem] h-[3.6rem] rounded-full border-2 border-white flex justify-center items-center hover:bg-[rgba(255,255,255,0.3)] transition-all duration-150 ease-in group"
-              key={i}
-              to={icons.link}
-            >
-              {<icons.icon />}
-            </Link>
-          ))}
+        <div className="contact justify-self-center md:justify-self-end flex flex-col gap-3">
+          <Typography variant="p_normal_16" color="text-white">
+            We are here to help
+          </Typography>
+          <div className="contact justify-self-center md:justify-self-end flex items-center gap-3">
+            {socialIcons.map((icons, i) => (
+              <Link
+                className="w-[3.6rem] h-[3.6rem] rounded-full border-2 border-white flex justify-center items-center hover:bg-[rgba(255,255,255,0.3)] transition-all duration-150 ease-in group"
+                key={i}
+                to={icons.link}
+              >
+                {<icons.icon />}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
