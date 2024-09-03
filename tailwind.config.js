@@ -21,6 +21,7 @@ export default {
       bg_677: "var(--bg_677)",
       bg_FFE: "var(--bg_FFE)",
       bg_153: "var(--bg_153)",
+      bg_D9D: "var(--bg_D9D)",
 
       /* border color */
       border_DCD: "var(--border_DCD)",

@@ -2,12 +2,13 @@ import React from "react";
 import cnMerge from "../utils/CnMerge";
 
 const variantsMapping = {
-  h2: "font-primary_font font-bold text-[4rem]",
+  h2: "font-primary_font font-bold text-[3.5rem] sm:text-[4rem]",
   h3: "font-primary_font font-semibold text-[3.2rem]",
   h4: "font-primary_font font-semibold text-[2.4rem]",
 
   p_normal_12: "font-primary_font font-normal text-[1.2rem]",
   p_normal_16: "font-primary_font font-normal text-[1.6rem]",
+  p_semibold_16: "font-primary_font font-semibold text-[1.6rem]",
   p_bold_16: "font-primary_font font-bold text-[1.6rem]",
 
   span_normal_12: "font-primary_font font-normal text-[1.2rem]",
@@ -15,6 +16,7 @@ const variantsMapping = {
   span_normal_16:
     "font-primary_font font-normal text-[1.2rem] sm:text-[1.6rem]",
   span_normal_24: "font-primary_font font-normal text-[2.4rem]",
+  span_bold_24: "font-primary_font font-bold text-[2.4rem]",
   span_bold_16: "font-primary_font font-bold text-[1.6rem]",
   span_semibold_20: "font-primary_font font-semibold text-[2rem]",
   span_bold_20: "font-primary_font font-bold text-[2rem]",
