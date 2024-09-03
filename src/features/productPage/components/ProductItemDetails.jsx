@@ -70,7 +70,7 @@ const ProductItemDetails = ({ productItemDetails }) => {
           <div className="mt-[3rem] border border-border_DCD">
             <Subscription />
           </div>
-          <div className="product_mark my-[3rem]">
+          <div className="product_mark mt-[3rem]">
             <ProductCheckMarks />
           </div>
         </div>
