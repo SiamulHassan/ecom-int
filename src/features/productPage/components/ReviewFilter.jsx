@@ -21,7 +21,7 @@ const ReviewFilter = () => {
           />
           <CiSearch
             size={25}
-            className="text-white absolute top-[50%] translate-y-[-50%] right-4"
+            className="cursor-pointer text-white absolute top-[50%] translate-y-[-50%] right-4"
           />
         </div>
       </div>

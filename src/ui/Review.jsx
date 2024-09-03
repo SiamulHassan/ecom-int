@@ -8,11 +8,11 @@ import Dislike from "../assets/icons/Dislike";
 
 const Review = () => {
   return (
-    <div className="">
+    <>
       {reviewData.map((review, i) => (
         <div
           key={i}
-          className="grid grid-cols-2 items-center border-b border-border_DCD gap-x-4 pb-[1.5rem] mb-[2rem] last:mb-0"
+          className="grid grid-cols-1 sm:grid-cols-2 items-center border-b border-border_DCD gap-x-4 pb-[1.5rem] mb-[2rem] last:mb-0"
         >
           <div className="left_part">
             <div className="grid grid-cols-[4rem_12rem] items-center">
@@ -23,7 +23,7 @@ const Review = () => {
                 {review.reviewer}
               </Typography>
             </div>
-            <div className="grid grid-cols-[12rem_12rem] items-center gap-x-[1.6rem]">
+            <div className="grid grid-cols-[12rem_12rem] items-center gap-x-[1.6rem] py-[1rem] md:py-[0.6rem]">
               <ReviewStar />
               <Typography variant="span_normal_16" color="text-primary_color">
                 {review.starStatus}
@@ -33,7 +33,7 @@ const Review = () => {
               {review.reviewMessage}
             </Typography>
           </div>
-          <div className="right_part justify-self-end flex flex-col gap-[4rem]">
+          <div className="right_part justify-self-start sm:justify-self-end flex flex-row sm:flex-col gap-[4rem]">
             <Typography variant="span_bold_16" className="self-end">
               {review.date}
             </Typography>
@@ -47,7 +47,7 @@ const Review = () => {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
