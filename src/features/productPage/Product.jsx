@@ -6,16 +6,18 @@ import ProductAccordion from "./components/ProductAccordion";
 import Feature from "./components/Feature";
 import FrequentBought from "./components/FrequentBought";
 import ReviewSection from "./components/ReviewSection";
+import Consultation from "./components/Consultation";
 const Product = () => {
   return (
-    <>
+    <main>
       <BreadCrumb />
       <ProductDetails productData={productData} />
       <ProductAccordion />
       <Feature />
       <FrequentBought />
       <ReviewSection />
-    </>
+      <Consultation />
+    </main>
   );
 };
 

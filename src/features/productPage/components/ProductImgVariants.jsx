@@ -4,12 +4,12 @@ import ImgVariantSlider from "./ImgVariantSlider";
 const ProductImgVariants = ({ smallImgs, bigImgs }) => {
   const [bigImg, setBigImg] = useState(0);
   return (
-    <div className="flex flex-col gap-[3.2rem]">
+    <div className="flex flex-col gap-[3.2rem] items-center">
       <div className="img_view flex-grow">
         <img
           src={bigImgs[bigImg]}
           alt="product image"
-          className="h-[50rem] w-[50rem] md:w-full md:h-full object-cover"
+          className="h-[35rem] w-[40rem] sm:h-[50rem] sm:w-[50rem] md:w-[60rem] md:h-[60rem] object-cover"
         />
       </div>
 

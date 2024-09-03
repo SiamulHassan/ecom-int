@@ -2,7 +2,9 @@ import React from "react";
 import cnMerge from "../utils/CnMerge";
 
 const variantsMapping = {
-  h2: "font-primary_font font-bold text-[3.5rem] text-[4rem] sm:leading-[5.5rem] md:leading-[6.8rem]",
+  h2: "font-primary_font font-bold text-[3.5rem] md:text-[4rem] sm:leading-[5.5rem] md:leading-[6.8rem]",
+  h2_secondary:
+    "font-primary_font font-bold text-[3.5rem] md:text-[4rem] leading-[4.2rem] sm:leading-[5.1rem] md:leading-[4.8rem]",
   h3: "font-primary_font font-semibold text-[3.2rem]",
   h4: "font-primary_font font-semibold text-[2.4rem]",
 
@@ -26,6 +28,7 @@ const variantsMapping = {
 const htmlTagMapping = {
   h1: "h1",
   h2: "h2",
+  h2_secondary: "h2",
   h3: "h3",
   h4: "h4",
   h5: "h5",
