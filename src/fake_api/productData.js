@@ -5,6 +5,8 @@ import product_small_4 from "../assets/images/product_small_4.png";
 import product_large1 from "../assets/images/product_large_1.png";
 export const productData = [
   {
+    id: 1,
+    image: product_small_4,
     smallImgs: [
       product_small_1,
       product_small_2,

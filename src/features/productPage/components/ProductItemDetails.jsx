@@ -5,17 +5,22 @@ import Typography from "../../../ui/Typography";
 import ProductDescription from "./ProductDescription";
 import SelectSize from "./SelectSize";
 import SelectFlavor from "./SelectFlavor";
-import ButtonSecondary from "../../../ui/ButtonSecondary";
 import AddToCartBtn from "../../../ui/AddToCartBtn";
 import Subscription from "./Subscription";
 import ProductCheckMarks from "./ProductCheckMarks";
+import { ToastContainer, toast } from "react-toastify";
+import { useCartContext } from "../../../context/CartContext";
 
 const ProductItemDetails = ({ productItemDetails }) => {
-  const handleAddCart = () => {
-    console.log("add to btn clicked");
+  const { addToCart } = useCartContext();
+  const handleAddCart = (product) => {
+    toast("Item added to cart");
+    const { id, productName, price, image } = product;
+    addToCart({ id, productName, price, image });
   };
   return (
     <div>
+      <ToastContainer />
       <div className="flex items-center gap-[1.6rem]">
         <ReviewStar />
         <ButtonPrimary link="/" hasLink>
@@ -50,7 +55,7 @@ const ProductItemDetails = ({ productItemDetails }) => {
             <SelectFlavor flavor={product.flavor} />
           </div>
           <div className="btn my-[3rem]">
-            <AddToCartBtn width="80%" onclick={handleAddCart}>
+            <AddToCartBtn width="80%" onclick={() => handleAddCart(product)}>
               Add to Cart
             </AddToCartBtn>
           </div>

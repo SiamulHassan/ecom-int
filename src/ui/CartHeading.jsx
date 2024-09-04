@@ -1,7 +1,9 @@
 import React from "react";
 import Typography from "./Typography";
 import { IoClose } from "react-icons/io5";
+import { useCartContext } from "../context/CartContext";
 const CartHeading = ({ setShowCart }) => {
+  const { cart } = useCartContext();
   return (
     <div className="heading">
       <div className="cross grid grid-cols-2 items-center">
@@ -32,7 +34,7 @@ const CartHeading = ({ setShowCart }) => {
       </div>
       <div className="added_items">
         <Typography variant="span_normal_16" color="text-secondary_color">
-          Added items (4 Items)
+          Added items {`(${cart.length} Items)`}
         </Typography>
       </div>
     </div>
