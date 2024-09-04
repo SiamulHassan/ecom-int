@@ -29,13 +29,15 @@ const DesktopNav = ({ navList, handleCart }) => {
           className="cursor-pointer hover:scale-[1.1] transition-all duration-100 ease-in"
           onclick={handleCart}
         />
-        <Typography
-          variant="span_normal_16"
-          color="text-primary_color"
-          className="cursor-pointer inline-block relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondary_color after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
-        >
-          Sign In
-        </Typography>
+        <Link to="/sign-in">
+          <Typography
+            variant="span_normal_16"
+            color="text-primary_color"
+            className="cursor-pointer inline-block relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondary_color after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+          >
+            Sign In
+          </Typography>
+        </Link>
       </div>
       {/* Main Navigation for Desktop ends */}
     </>
