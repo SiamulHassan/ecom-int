@@ -25,7 +25,9 @@ const RootLayout = () => {
           "top-0",
           "w-full",
           "shadow-lg",
-          "z-[99]"
+          "z-[99]",
+          "transition-all",
+          "duration-300"
         );
       }
     };

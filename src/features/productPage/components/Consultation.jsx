@@ -15,7 +15,7 @@ const Consultation = () => {
               alt="consult image"
             />
           </picture>
-          <div className="justify-self-start md:justify-self-end xl:justify-self-start self-center py-[2rem] md:py-0">
+          <div className="justify-self-start md:justify-self-end xl:justify-self-start self-center py-[2rem] md:py-0 px-[1rem] sm:px-0">
             <Typography variant="p_normal_16">
               Not Sure where to Start?
             </Typography>
