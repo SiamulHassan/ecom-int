@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { navList } from "../fake_api/NavData";
+import navData from "../fake_api/navData";
 import ProductCartItems from "./ProductCartItems";
 import NavMobile from "./NavMobile";
 import DesktopNav from "./DesktopNav";
@@ -25,12 +25,12 @@ const NavBar = () => {
           handleCart={handleCart}
           handleMenuToggle={handleMenuToggle}
         />
-        <DesktopNav navList={navList} handleCart={handleCart} />
+        <DesktopNav navList={navData} handleCart={handleCart} />
 
         <NavMenu
           isMenuOpen={isMenuOpen}
           handleMenuToggle={handleMenuToggle}
-          navList={navList}
+          navList={navData}
         />
       </nav>
       {/* product cart */}

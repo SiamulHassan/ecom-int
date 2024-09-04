@@ -1,4 +1,4 @@
-export const navList = [
+const navData = [
   {
     navItem: "Shop",
     link: "/shop",
@@ -16,3 +16,4 @@ export const navList = [
     link: "/blog",
   },
 ];
+export default navData;
